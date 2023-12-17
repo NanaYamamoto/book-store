@@ -1,23 +1,36 @@
 html {
     background: rgb(250, 239, 239);
+    font-size: 16px;
 }
 
 header,
 footer {
     background-color: #99ccff;
     color: white;
+    padding: 20px 10px;
 }
 
 body {
     background: rgb(179, 176, 176);
-    width: 1000px;
+    /* width: 80vw; */
     margin: 0 auto;
     font-family: 'Barlow', sans-serif;
+    color: rgb(49, 40, 39);
+    text-align: center;
+}
+
+input[type="search"] {
+    width: 100%;
 }
 
 ul {
     margin: 0;
     padding: 0;
+}
+
+li {
+    list-style: none;
+    line-height: 30px;
 }
 
 header li {
@@ -29,27 +42,50 @@ nav {
     display: inline-block;
 }
 
-main {
-    width: 680px;
-    display: inline-block;
+header h1 {
+    /* width: 60%; */
+    width: 100%;
 }
 
-aside {
-    width: 270px;
+/* main {
+width: 68%;
+display: inline-block;
+padding: 10px;
+font-size: 12px;
+} */
+
+
+/* aside {
+    width: 27%;
     display: inline-block;
     vertical-align: top;
-}
+    padding: 10px;
+} */
+
 
 .product {
+    box-sizing: border-box;
     border: 1px solid gray;
-    width: 200px;
+    /* width: 30%; */
+    width: 100%;
     margin: 5px;
     padding: 5px;
-    display: inline-block;
+    /* display: inline-block; */
+    text-align: center;
 }
 
 img {
-    max-width: 100%;
+    /* max-width: 100%; */
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: rgb(46, 49, 50);
 }
 
 .button {
@@ -57,6 +93,127 @@ img {
     display: inline-block;
 }
 
-/* header {
-    display: inline;
-} */
+.button:last-of-type {
+    background: rgb(38, 108, 228);
+    color: white;
+}
+
+/* product detail page */
+.product-detail {
+    width: 660px;
+}
+
+.product-detail img {
+    max-width: 50%;
+    float: left;
+}
+
+.product-detail p {
+    float: none;
+}
+
+/* Contacy us */
+form {
+    padding: 10px;
+    margin: 10px 0;
+    width: 600px;
+}
+
+form>div {
+    margin: 10px 0;
+}
+
+.inline label {
+    display: inline-block;
+    width: 100px;
+}
+
+input[type="text"],
+[type="email"],
+textarea {
+    padding: 10px;
+    width: 400px;
+}
+
+
+/* Table */
+table {
+    width: 400px;
+    text-align: left;
+    margin: 20px 0;
+}
+
+caption {
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 1px dotted;
+    padding: 10px;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+tr:hover {
+    background-color: #99ccff;
+}
+
+/********** Responsive Design ***********/
+/* 800px以上になったら以下を適用する */
+@media(min-width:800px) {
+    input[type="search"] {
+        width: 40%;
+        margin-left: 2em;
+    }
+
+    .product {
+        display: inline-block;
+        width: 48%;
+    }
+}
+
+/* 1000px以上になったら以下を適用する　*/
+@media(min-width:1000px) {
+    body {
+        text-align: left;
+    }
+
+    header h1 {
+        width: 60%;
+    }
+
+    input[type="search"] {
+        width: 30%;
+    }
+
+    main {
+        width: 68%;
+        display: inline-block;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    aside {
+        width: 27%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 10px;
+    }
+
+    input[type="search"] {
+        width: 20%;
+        margin-left: 2em;
+    }
+}
+
+/* 1200px以上になったら以下を適用する　*/
+@media(min-width:1200px) {
+    body {
+        max-width: 80vw;
+    }
+
+    .product {
+        width: 30%;
+    }
+}
