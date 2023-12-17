@@ -1,0 +1,62 @@
+html {
+    background: rgb(250, 239, 239);
+}
+
+header,
+footer {
+    background-color: #99ccff;
+    color: white;
+}
+
+body {
+    background: rgb(179, 176, 176);
+    width: 1000px;
+    margin: 0 auto;
+    font-family: 'Barlow', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+}
+
+header h1,
+nav {
+    display: inline-block;
+}
+
+main {
+    width: 680px;
+    display: inline-block;
+}
+
+aside {
+    width: 270px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.product {
+    border: 1px solid gray;
+    width: 200px;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+}
+
+.button {
+    padding: 10px;
+    display: inline-block;
+}
+
+/* header {
+    display: inline;
+} */
