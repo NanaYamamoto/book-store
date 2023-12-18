@@ -1,17 +1,17 @@
 html {
-    background: rgb(250, 239, 239);
+    background: white;
     font-size: 16px;
 }
 
 header,
 footer {
-    background-color: #99ccff;
-    color: white;
+    background-color: rgb(255, 230, 230);
+    color: rgb(26, 26, 26);
     padding: 20px 10px;
 }
 
 body {
-    background: rgb(179, 176, 176);
+    background: rgb(242, 242, 242);
     /* width: 80vw; */
     margin: 0 auto;
     font-family: 'Barlow', sans-serif;
@@ -67,7 +67,7 @@ font-size: 12px;
     box-sizing: border-box;
     border: 1px solid gray;
     /* width: 30%; */
-    width: 100%;
+    width: 90%;
     margin: 5px;
     padding: 5px;
     /* display: inline-block; */
@@ -77,6 +77,8 @@ font-size: 12px;
 img {
     /* max-width: 100%; */
     width: 100%;
+    /* 画像の高さが違うので絶対値310にして高さを合わせる */
+    height: 330px;
 }
 
 a {
@@ -100,10 +102,11 @@ a:hover {
 
 /* product detail page */
 .product-detail {
-    width: 660px;
+    width: 80% !important;
 }
 
 .product-detail img {
+    height: 100%;
     max-width: 50%;
     float: left;
 }
@@ -111,6 +114,12 @@ a:hover {
 .product-detail p {
     float: none;
 }
+
+.product-table {
+    margin: 20px auto;
+    width: 60%;
+}
+
 
 /* Contacy us */
 form {
